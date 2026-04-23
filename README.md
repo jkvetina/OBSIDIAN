@@ -12,7 +12,7 @@ Now a human version from me:
 
 ## Preview
 
-![Screenshot](./screenshot_01.jpg)
+![Screenshot](./screenshot.png)
 
 ## What's different from Baseline
 
