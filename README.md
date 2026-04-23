@@ -30,9 +30,13 @@ Now a human version from me:
 
 ### Manual
 
-1. Download or clone this folder.
-2. Copy the `One Oracle Developer` folder into your vault at `.obsidian/themes/`.
+1. In your vault, create the folder `.obsidian/themes/One Oracle Developer/`.
+2. Download `theme.css` and `manifest.json` from this repo into that folder.
 3. In Obsidian: `Settings → Appearance → Themes → One Oracle Developer`.
+
+### Community themes
+
+Once listed: `Settings → Appearance → Manage → Browse → One Oracle Developer → Install and use`.
 
 ## Requirements
 
