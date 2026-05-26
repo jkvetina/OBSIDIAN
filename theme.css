@@ -3169,7 +3169,7 @@ body {
     --font-normal:                'IBM Plex Sans', 'Open Sans', system-ui, -apple-system, "Segoe UI", sans-serif;
     --font-monospace:             'JetBrains Mono', 'Fira Code', monospace;
     --font-interface:             var(--font-monospace);
-    --code-comment:               #999;
+    --code-comment:               #999 !important;
     --ood-font-heading:           "Source Serif Pro", Georgia, "Times New Roman", serif;
     --ood-font-body:              var(--font-normal);
 
