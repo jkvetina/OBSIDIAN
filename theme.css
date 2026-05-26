@@ -3154,7 +3154,7 @@ settings:
    ============================================================ */
 
 /* Google Fonts – pulled at load time. Override --ood-font-* via CSS snippets to swap. */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+Pro:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 body {
     /* Force accent back to the user's picked color. Baseline has
@@ -3166,8 +3166,10 @@ body {
     --ood-accent-bg-weak:         color-mix(in srgb, var(--interactive-accent) 10%, transparent);
     --ood-accent-bg-hover:        color-mix(in srgb, var(--interactive-accent) 18%, transparent);
     --ood-accent-underline-width: 2px;
+    --font-normal:                'IBM Plex Sans', 'Open Sans', system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-monospace:             'JetBrains Mono', 'Fira Code', monospace;
     --ood-font-heading:           "Source Serif Pro", Georgia, "Times New Roman", serif;
-    --ood-font-body:              "Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --ood-font-body:              var(--font-normal);
 
     /* Blockquote – keep Baseline's default bar shape + thickness, just darken the background */
     --blockquote-background-color: var(--background-secondary);
@@ -3180,7 +3182,10 @@ body {
     display: none !important;
 }
 
-/* (c) Tab bar polish – tighter padding, accent underline on active tab */
+/* (c) Tab bar polish – tighter padding, accent underline on active tab; hide tab icon */
+.workspace-tab-header-inner-icon {
+    display: none !important;
+}
 .workspace-tab-header {
     position: relative;
     padding-block: 2px;
@@ -3732,4 +3737,17 @@ html body .cm-formatting-list-ul * {
    ========================================================================== */
 body {
     --list-indent: 1.45em;
+}
+
+/* ==========================================================================
+   Code / comment tokens – monospace family via --font-monospace
+   ========================================================================== */
+span.cm-comment {
+    font-family: var(--font-monospace);
+    font-size: 0.8rem;
+}
+.cm-quote {
+    font-family: var(--font-monospace);
+    font-style: normal;
+    font-size: 0.85rem;
 }
