@@ -4,6 +4,9 @@ All notable changes to the One Oracle Developer theme and its companion `ood-` s
 
 ## Unreleased
 
+- Link color polish - note links now use the active accent color, hover as black underlined text, and inherit grey styling inside struck text and completed tasks.
+- Typography and code-token polish - add IBM Plex Sans and JetBrains Mono font variables, lead interface/code snippets with the monospace stack where intended, hide tab icons, and tune comment/quote token sizing and color.
+- Fix List open tabs hover alignment – remove the 1px downward SVG translate from the tab-list chevron so it stays aligned with New tab and other tab chrome buttons.
 - Narrower nested-list indentation – Obsidian's default `--list-indent: 2em` made the per-level step before nested bullets/checkboxes read too wide. Set `body { --list-indent: 1.45em }`. The checkbox-to-label gap is governed by the checkbox margin (not this variable), so it stays untouched. Mirrored in the today-dashboard plugin: nested step `.td-item-children` padding-left 36px → 23px, and the checkbox→label gap tightened by narrowing the row's checkbox grid column 28px → 20px and the gap 8px → 4px.
 - Tag vertical alignment fix – Open Sans body font sits visually lower than the prior face, leaving inline tag pills floating below the text baseline (most obvious on task-list items). Added `position: relative; top: -2px` to the shared tag rule covering reading view, live preview (`.cm-hashtag*`), and headings.
 
